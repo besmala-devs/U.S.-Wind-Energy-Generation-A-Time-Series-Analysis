@@ -9,7 +9,7 @@ steps from wind_energy_analysis.ipynb:
 """
 import pandas as pd
 
-DATA_PATH = "..\Net_generation_wind_all_sectors_monthly.csv"
+DATA_PATH = "../Net_generation_wind_all_sectors_monthly.csv"
 
 
 def load_wind_series(path: str = DATA_PATH) -> pd.Series:
@@ -36,3 +36,9 @@ if __name__ == "__main__":
     train, test = train_test_split(series)
     print(f"Series length: {len(series)} (expected 300)")
     print(f"Train: {len(train)} obs | Test: {len(test)} obs")
+
+    """
+    $ python data_loader.py
+    Series length: 300 (expected 300)
+    Train: 288 obs | Test: 12 obs
+    """
