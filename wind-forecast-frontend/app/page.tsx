@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import MonthsSelector from "./components/MonthsSelector";
+import MonthsSelector from "./components/MonthSelector";
 import ForecastChart, { ChartPoint } from "./components/ForecastChart";
 
 const API_BASE = "http://127.0.0.1:8000";
